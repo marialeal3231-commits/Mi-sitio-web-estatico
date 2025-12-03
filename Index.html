@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Mi Sitio Web Personal</h1>
+        <p>¡Bienvenido! Esta es mi página de presentación.</p>
+    </header>
+
+    <main>
+        <section id="informacion-personal">
+            <h2>Sobre Mí</h2>
+            <p>
+                ¡Hola! Soy un estudiante de desarrollo web apasionado por la tecnología. 
+                Estoy aprendiendo a crear sitios web interactivos y funcionales.
+            </p>
+            
+            <img src="Img/Mi foto.jpeg" alt="Foto personal" width="200">
+        </section>
+
+        <section id="redes-sociales">
+            <h2>Sígueme en Redes Sociales</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/marialeal3231-commits" target="_blank">Git Hub</a></li>
+            </ul>
+        </section>
+        
+        <section id="hobbies">
+            <h2>Mis Hobbies</h2>
+            <ul>
+                <li>Lectura de ciencia ficción</li>
+                <li>Hacer ejercicio</li>
+                <li>Jugar videojuegos</li>
+            </ul>
+        </section>
+
+        <section id="tareas">
+            <h2>Tareas Priorizadas</h2>
+            <ol>
+                <li>Finalizar la estructura del sitio web</li>
+                <li>Diseñar el estilo con CSS</li>
+                <li>Implementar la validación con JavaScript</li>
+            </ol>
+        </section>
+
+        <section id="horario">
+            <h2>Horario Semanal de Actividades</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Mañana</th>
+                        <th>Tarde</th>
+                        <th>Noche</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Lunes</th>
+                        <td>Clases Online</td>
+                        <td>Trabajo en Proyecto</td>
+                        <td>Ejercicio</td>
+                    </tr>
+                        <th>Martes</th>
+                        <td>Clases Online</td>
+                        <td>Busqueda de propuestas</td>
+                        <td>Practicar ciclismo</td>
+                    </tr>
+                    <tr>
+                        <th>Miércoles</th>
+                        <td>Clases Online</td>
+                        <td>Estudio de HTML/CSS</td>
+                        <td>Lectura</td>
+                    </tr>
+                        <th>Jueves</th>
+                        <td>Clases Online</td>
+                        <td>Entrenamiento de nueva wave</td>
+                        <td>Practicar patinaje</td>
+                    </tr>
+                        <th>Viernes</th>
+                        <td>Clases Online</td>
+                        <td>Realizar consultas academicas</td>
+                        <td>Practicar levantamiento de pesas</td>
+                    </tr>
+                        <th>Sabado</th>
+                        <td>Clases Online</td>
+                        <td>Ver una serie/pelicula nueva</td>
+                        <td>Compartir con mi familia</td>
+                    </tr>
+                        <th>Domingo</th>
+                        <td>Realizar dos horas de natacion avanzada</td>
+                        <td>Dia de descanso</td>
+                        <td>Pasear con Violeta al parque</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contactForm" action="#" method="POST">
+                
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="motivo">Motivo de Contacto:</label><br>
+                <select id="motivo" name="motivo" required>
+                    <option value="">-- Selecciona un motivo --</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="propuesta">Propuesta de Colaboración</option>
+                    <option value="otro">Otro</option>
+                </select><br><br>
+
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+
+            <p id="mensaje-validacion" style="margin-top: 15px;"></p>
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
